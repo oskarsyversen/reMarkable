@@ -1,0 +1,442 @@
+@font-face {
+    src: url(../fonts/nocturne-serif/NocturneSerif-Regular.ttf);
+    font-family: nos;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #F1EEEA;
+    --orange: rgb(211, 126, 23);
+    --darkorange: rgb(194, 115, 18);
+    --darkblue: #222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: nos;
+}
+
+h1 {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+nav p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.reMarkableLogo {
+    font-size: 1.45rem;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.buyNow-p {
+    font-size: 0.9rem;
+    padding: 4px 12px;
+    border: 2px solid #222;
+    border-radius: 40px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.buyNow-p:hover{
+    border: 2px solid var(--darkorange);
+}
+
+@media screen and (max-width:550px) {
+    nav p {
+        font-size: 0.9rem;
+    }
+    .reMarkableLogo {
+        font-size: 1.1rem;
+    }
+    .buyNow-p {
+        font-size: 0.8rem;
+    }
+}
+
+.startPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.startPage-container {
+    margin-top: 10vh;
+    width: 75%;
+    height: 75vh;
+    display: flex;
+}
+
+.startPage-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:1000px) {
+    .startPage-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    } 
+    .startPage-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        order: 2;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .startPage-container {
+        margin-top: 0px;
+    }
+}
+
+.darkreMarkable {
+    font-weight: 600;
+}
+
+.thePaperTablet {
+    font-style: italic;
+}
+
+.buyNow-btn {
+    color: var(--primary);
+    width: 130px;
+    height: 45px;
+    background-color: var(--orange);
+    border-radius: 40px;
+    border: none;
+    font-size: 1.2rem;
+    transition: 300ms;
+    margin-top: 20px;
+}
+
+.buyNow-btn:hover {
+    background-color: var(--darkorange);
+}
+
+.scrollToLearnField {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+@keyframes upAndDown {
+    from {
+        transform: translateY(-3px);
+    }
+    to {
+        transform: translateY(4px);
+    }
+}
+
+.arrow {
+    animation: upAndDown 0.8s ease-in alternate infinite;
+}
+
+.scrollToLearnField p {
+    margin: 0 0 0 5px;
+    cursor: pointer;
+}
+
+.startPage-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startImage {
+    width: 700px;
+    height: auto;
+}
+@media screen and (max-width:1000px) {
+    .startPage-image {
+        width: 90%;
+        justify-content: center;
+        order: 1;
+    }
+    .startImage {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .startPage-image {
+        width: 100%;
+        justify-content: center;
+        order: 1;
+    }
+    .startImage {
+        width: 380px;
+    }
+}
+
+.introducing {
+    width: 100%;
+    background-color: var(--darkblue);
+    color: white;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+
+.colorsIntroduction-container {
+    margin-top: 10vh;
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1000px) {
+    .colorsIntroduction-container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}
+
+.colorsIntroduction-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colorsIntroduction-text p {
+    font-size: 0.9rem;
+}
+
+.colorsIntroduction-text h1 {
+    font-size: 3.5rem;
+}
+
+.colorsUnderscore {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(28, 87, 181) 22%, rgb(10, 157, 15) 26%, rgb(10, 157, 15) 47%,yellow 51%, yellow 72%, red 78%) 5;
+}
+
+.colorsIntroduction-text h3 {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+@media screen and (max-width:1000px) {
+    .colorsIntroduction-text {
+        width: 70%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.colorsImage {
+    position: relative;
+    width: 550px;
+    height: auto;
+    rotate: 5deg;
+}
+
+.colorSplash {
+    position: absolute;
+    width: 220px;
+    rotate: -3deg;
+    margin: 0 240px 270px 0;
+    filter: brightness(80%);
+}
+
+@media screen and (max-width:1000px) {
+    .colorsImage {
+        width: 500px;
+    }
+    .colorSplash {
+        width: 180px;
+        margin: 0 230px 230px 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .colorsImage {
+        width: 350px;
+    }
+    .colorSplash {
+        width: 120px;
+        margin: 0 160px 180px 0;
+    }
+}
+
+.learnMore-btn {
+    width: auto;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 8px 18px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.learnMore-btn:hover {
+    border: 2px solid var(--darkorange);
+}
+
+.kommunikasjonsprosess {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kommunikasjonHeader {
+    font-size: 2.6rem;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:1000px) {
+    .kommunikasjonHeader {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+    .kommunikasjonsprosess {
+        height: auto;
+    }
+}
+
+.zone {
+    width: 75%;
+    height: auto;
+    text-align: left;
+    display: flex;
+}
+
+.zone-tekstfelt {
+    width:55%;
+    padding: 90px 80px;
+}
+
+.zone-tekstfelt h1 {
+    font-size: 2rem;
+}
+
+.zone-tekstfelt p {
+    font-size: 1.3rem;
+}
+
+.dark {
+    width: 75%;
+    border-radius: 20px;
+    height: auto;
+    text-align: left;
+    display: flex;
+    justify-content: right;
+    background-color: var(--darkblue);
+    color: white;
+    text-align: right;
+}
+
+.zone-image {
+    width: 45%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zone-image img {
+    width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width:1000px) {
+    .zone {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 40px 0 40px 0;
+        margin: 40px 0;
+    }
+    .dark {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        border-radius: 0;
+        padding: 40px 0;
+    }
+    .zone-tekstfelt {
+        width: 80%;
+        order: 1;
+        padding: 30px;
+    }
+    .zone-image {
+        width: 50%;
+        order: 2;
+    }
+    .zone-tekstfelt h1 {
+        font-size: 1.7rem;
+    }
+    .zone-tekstfelt p {
+        font-size: 1rem;
+    }
+    
+}
