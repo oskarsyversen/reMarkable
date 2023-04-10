@@ -7,8 +7,8 @@
 :root {
     --primary: #F1EEEA;
     --orange: rgb(211, 126, 23);
-    --darkorange: rgb(194, 115, 18);
-    --darkblue: #222;
+    --darkorange: rgb(177, 105, 16);
+    --darkblue: #212121;
 }
 
 body {
@@ -16,6 +16,8 @@ body {
     padding: 0;
     background-color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    color: var(--darkblue);
 }
 
 h1, h2 {
@@ -77,7 +79,7 @@ nav p{
 .buyNow-p {
     font-size: 0.9rem;
     padding: 4px 12px;
-    border: 2px solid #222;
+    border: 2px solid var(--darkblue);
     border-radius: 40px;
     transition: 300ms;
     cursor: pointer;
@@ -186,6 +188,10 @@ nav p{
     animation: upAndDown 0.8s ease-in alternate infinite;
 }
 
+.arrow:hover {
+    cursor: pointer;
+}
+
 .scrollToLearnField p {
     margin: 0 0 0 5px;
     cursor: pointer;
@@ -199,7 +205,7 @@ nav p{
 }
 
 .startImage {
-    width: 700px;
+    width: 650px;
     height: auto;
 }
 @media screen and (max-width:1000px) {
@@ -288,7 +294,7 @@ nav p{
 
 .colorsImage {
     position: relative;
-    width: 550px;
+    width: 650px;
     height: auto;
     rotate: 5deg;
 }
@@ -297,7 +303,7 @@ nav p{
     position: absolute;
     width: 220px;
     rotate: -3deg;
-    margin: 0 240px 270px 0;
+    margin: 0 300px 290px 0;
     filter: brightness(80%);
 }
 
@@ -361,14 +367,14 @@ nav p{
 }
 
 .zone {
-    width: 75%;
+    width: 78%;
     height: auto;
     text-align: left;
     display: flex;
 }
 
 .zone-tekstfelt {
-    width:55%;
+    width:64%;
     padding: 90px 80px;
 }
 
@@ -393,7 +399,7 @@ nav p{
 }
 
 .zone-image {
-    width: 45%;
+    width: 36%;
     min-height: 100%;
     display: flex;
     justify-content: center;
